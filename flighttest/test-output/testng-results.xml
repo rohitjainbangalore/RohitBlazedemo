@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="2" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Selected Paris in fromPort dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Selected Rome in toPort dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on See available flights button button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Choose Flight button button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on PurchaseButton button]]>
+    </line>
+    <line>
+      <![CDATA[Flight is booked successfully.]]>
+    </line>
+    <line>
+      <![CDATA[Error occured: Expected condition failed: waiting for element to be clickable: By.name: fromPort (tried for 30 second(s) with 500 milliseconds interval)]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="41890" started-at="2021-01-17T16:55:49Z" finished-at="2021-01-17T16:56:31Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="41890" started-at="2021-01-17T16:55:49Z" finished-at="2021-01-17T16:56:31Z">
+      <class name="rohittest.NewFlightTest">
+        <test-method status="FAIL" signature="searchFlight(java.lang.String, java.lang.String)[pri:0, instance:rohittest.NewFlightTest@203ea1]" name="searchFlight" duration-ms="30112" started-at="2021-01-17T22:26:00Z" data-provider="FlightTestData" finished-at="2021-01-17T22:26:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Paris]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at rohittest.NewFlightTest.searchFlight(NewFlightTest.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Error occured: Expected condition failed: waiting for element to be clickable: By.name: fromPort (tried for 30 second(s) with 500 milliseconds interval)]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchFlight -->
+      </class> <!-- rohittest.NewFlightTest -->
+      <class name="rohittest.LibraryFunctions">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:rohittest.LibraryFunctions@39699c]" name="beforeMethod" is-config="true" duration-ms="7086" started-at="2021-01-17T22:25:49Z" finished-at="2021-01-17T22:25:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="searchFlight(java.lang.String, java.lang.String)[pri:0, instance:rohittest.LibraryFunctions@39699c]" name="searchFlight" duration-ms="3946" started-at="2021-01-17T22:25:56Z" data-provider="FlightTestData" finished-at="2021-01-17T22:26:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Paris]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Selected Paris in fromPort dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Selected Rome in toPort dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on See available flights button button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Choose Flight button button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on PurchaseButton button]]>
+            </line>
+            <line>
+              <![CDATA[Flight is booked successfully.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchFlight -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:rohittest.LibraryFunctions@39699c]" name="afterMethod" is-config="true" duration-ms="708" started-at="2021-01-17T22:26:30Z" finished-at="2021-01-17T22:26:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- rohittest.LibraryFunctions -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
