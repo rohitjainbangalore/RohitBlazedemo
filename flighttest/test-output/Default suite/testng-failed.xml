@@ -3,15 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="rohittest.LibraryFunctions">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- rohittest.LibraryFunctions -->
       <class name="rohittest.NewFlightTest">
         <methods>
-          <include name="searchFlight" invocation-numbers="0"/>
+          <include name="afterTest"/>
+          <include name="searchFlight" invocation-numbers="1"/>
+          <include name="beforeTest"/>
         </methods>
       </class> <!-- rohittest.NewFlightTest -->
     </classes>

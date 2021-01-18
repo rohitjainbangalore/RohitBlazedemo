@@ -31,14 +31,13 @@ public class NewFlightTest {
 	
 	 @DataProvider(name = "FlightTestData")
   	public Object[][] dataForFlight(){
-        	return new Object[][]{
-              	{"Paris","Rome"}
-        	};
+		 return new Object[][] {{"Boston","Rome"},{"Philadelphia","London"}};
+	 
   	}
 	 
 	
-	@BeforeTest
-    public void beforeMethod() {
+	@BeforeMethod
+    public void beforeTest() {
 		//final WebDriverWait ShortWait;
 		//final WebDriverWait LongWait;
 		WebDriverManager.chromedriver().setup();
@@ -49,14 +48,14 @@ public class NewFlightTest {
 
     }
 
-	@AfterTest
-    public void afterMethod() {
+	@AfterMethod
+    public void afterTest() {
         driver.quit();
     }
 
    @Test(dataProvider="FlightTestData")
-    public void searchFlight(String keyWord1, String keyWord2){
-    	//String keyWord1 = "Paris";
+   public void searchFlight(String keyWord1 , String keyWord2 ){
+    //	String keyWord1 = "Paris";
     	//String keyWord2 = "Rome";
     	
     	if (LibraryFunctions.SelectValueInDropDown(RepositoryXpaths.CitiesSelectionPage.CityFromDropdown, keyWord1) == false) Assert.fail();;
